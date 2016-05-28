@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="Untitled-4.css" rel="stylesheet" type="text/css" />
+<title>注册页面</title>
+<script type="text/javascript" src="1.js" charset="gb2312">
+</script>
+<style type="text/css">
+
+body {
+	background-color:#CCF;
+	text-align: center;
+	font-size: 15px;
+}
+#td {
+	font-family: "微软雅黑";
+	text-align: center;
+}
+ #code  
+            {  
+                font-family:Arial;  
+                font-style:italic;  
+                font-weight:bold;  
+                border:0;  
+                letter-spacing:2px;  
+                color:blue;  
+            }  
+</style>
+</head>
+
+<body>
+<div id="zy">
+<table id="tb">
+ <tr>
+ <td width="264" class="td2">
+ <p align="center"> 
+<SCRIPT src="liushuideng.js" charset="gb2312"> 
+</SCRIPT> 
+
+<span id=a1>欢</span><span id=a2>迎</span><span id=a3>来</span><span id=a4>到</span><span id=a5>北</span><span id=a6>京</span><span id=a7>禾</span><span id=a8>唐</span><span id=a9>科</span><span id=a10>技</span> 
+</body> 
+</td>
+ <td width="132" class-"td3"><a href="#">返回首页</a></td>
+ <td width="132"></td>
+ <td width="132"></td>
+ <td width="132"></td>
+ <td width="132" class="tdd"><a href="登录页面.html">登录</a></td>
+ <td width="132" class="tdd"><a href="注册页面.html">注册</a></td>
+ <td width="132" class="tdd1"><a href="找回密码.html">忘记密码</a>？</td>
+ 
+ </tr>
+</table>
+</div>  
+
+<br /><br /><br />
+<form id="form1" name="form1" method="post" action='/insert.php' onsubmit="return myVal()" >
+  <table width="500" align="center" border="1px">
+    <tr height="60">
+      <td colspan="2">帐户注册</td>
+    </tr>
+    <tr height="60">
+      <td width="200">请输入证件类型:
+	  </td>
+      <td width="300">
+	  <select name="zhengjian">
+	  <option>居民身份证</option>
+	  <option>军官证</option>
+	  <option>警官证</option>
+	  <option>户口簿</option>
+	  <option>中华人民共和国护照</option>
+	  <option>外国护照</option>
+	  <option>临时身份证</option>
+	  <option>其他证件</option>
+	  </select>
+	  </td>
+    </tr>
+	 <tr height="60">
+	  <td >请输入证件号码：</td>
+      <td><label for="number"></label>
+      <input name="number"  type="text" id="number"/></td>
+    </tr>
+	<tr height="60">
+      <td width="200">请输入账户类型:
+	  </td>
+      <td width="300">
+	  <select name="zhanghu">
+	  <option>借记卡/准贷记卡</option>
+	  <option>信用卡</option>
+	  </select>
+	  </td>
+    </tr>
+	<tr height="60">
+	  <td >请输入账号号码：</td>
+      <td><label for="number2"></label>
+      <input name="number2"  type="text" id="number2" onblur="checkNumber()"/></td>
+    </tr>
+    <tr height="60">
+      <td >请输入支付密码：</td>
+      <td><label for="password1"></label>
+      <input name="password1" type="password" id="password1" onblur="pwStrength(this.value)"   onkeyup="pwStrength(this.value)"/></td>
+    </tr>
+    <tr height="60">
+      <td>密码强度：</td>
+      <td><table border="0" cellpadding="0" bordercolordark="#fdfeff" bordercolorlight="#99ccff" 
+cellspacing="0" style="width: 200px; display: inline; background-color: #e0f0ff"> 
+<tr height="60"> 
+<td id="strength_L" style="width: 100px; height: 19px;" align="center"> 
+弱 
+</td> 
+<td id="strength_M" style="width: 100px; height: 19px;" align="center"> 
+中 
+</td> 
+<td id="strength_H" style="width: 100px; height: 19px;" align="center"> 
+强 
+</td> 
+</tr> 
+</table>
+</td>
+    </tr>
+    <tr height="60">
+      <td>请再次输入密码：</td>
+      <td ><label for="password2"></label>
+      <input type="password" name="password2" id="password2" /></td>
+    </tr>
+    <tr height="60">
+      <td>请输入手机号：</td>
+      <td><label for="number3"></label>
+      <input name="number3"  type="text" id="number"/></td>
+    </tr>
+	<tr height="60">
+      <td>请输入验证码：</td>
+	  <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        <input type = "text" id = "input"/>  
+			<input type = "button" id="code" onClick="createCode()"/>  
+
+            			</td>
+			</tr>
+    <tr height="60">
+      <td>
+      <input name="submit" type="submit" id="submit" onClick="window.open('登录页面.html') " value="提交"/>
+      </td>
+      <td><input type="reset" name="reset" id="reset" value="重置" /></td>
+    </tr>
+  </table>
+</form>
+<br /><br /><br />
+
+<br />
+</body>
+</html>

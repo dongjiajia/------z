@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>account list</title>
+<style type="text/css" title="currentStyle">
+        @import "DataTables-1.10.11/media/css/jquery.dataTables.css";
+        @import"DataTables-1.10.11/media/css/dataTables.jqueryui.css";
+		@import"jquery-ui.css";
+</style>
+<script type="text/JavaScript" language="javascript" src="DataTables-1.10.11/media/js/jquery.js"></script>
+<script type="text/javascript" language="javascript" src="DataTables-1.10.11/media/js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="7.js">
+</script>
+<script src="jquery-ui.min.js"></script>
+</head>
+<body>
+<style type="text/css">
+
+body {
+	background-color:#CCF;
+	text-align: center;
+	font-size: 15px;
+}
+#td {
+	font-family: "微软雅黑";
+	text-align: center;
+}
+</style>
+<table width="500" align="center" border="1px"id="example">
+        <thead>
+            <tr>
+                <th>
+                    code
+                </th>
+                <th>
+                  user name
+                </th>
+				<th>
+                  Registration start time
+                </th>
+				<th>
+                  Registration end time
+                </th>
+				<th>
+                account type
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="odd gradeX">
+                <td align="center">
+                 124 
+                </td>
+                <td align="center">
+                 zhang san
+                </td>
+				<td align="center">
+               <input type="text" id="datepicker" />
+                </td>
+				<td align="center">
+               <input type="text" id="datepicker1" />
+                </td>
+				<td align="center">
+                 debit card
+            </tr>
+			</tbody>
+			</table>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#example').dataTable();});
+</script>
+<script>
+$(document).ready(function() {
+    $("#datepicker").datepicker();
+  });
+   $(document).ready(function() {
+    $("#datepicker1").datepicker();
+  });
+</script>
+<input type="button" onclick="addrowmy()" value="add" />
+<input type="button" onclick="delrow()" value="delete" />
+<input type="submit" id="submit"  value="determine"/>
+<input type="button" name="reset"  id="reset"  value="cancel"/>
+</body>
+</html>

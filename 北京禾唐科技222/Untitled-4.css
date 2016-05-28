@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+
+#zy{
+	padding: 15px;
+	width: 100%;
+	height: 55px;
+	background-color: #000;
+	text-align: center;
+	margin: 0px 0px;
+	position: relative;
+}
+#zyzy{
+	background-color: #666;
+	height: 120px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+.tdd {
+	border-top-style: none;
+	border-right-style: double;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: #FF6;
+	border-right-color: #666;
+	border-bottom-color: #FF6;
+	border-left-color: #FF6;
+	padding-top: 5px;
+	font-family:"΢���ź�";
+}
+.tdd1{
+	font-family:"΢���ź�";}
+#tb{
+	text-align:center;
+	height:30px;
+	width:1320px;
+	color:#FFF;
+}
+body {
+	background-color:#E8F7F5;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+#tb3{
+	font-family:"΢���ź�";
+	color:#CCC;
+	font-size:15px;
+	text-align:center;
+	}
+#tp{
+	width="600" ;
+	height="180";
+	text-align: center;
+	font-family: "��Բ";
+	font-size: 18px;
+	font-weight: bold;	
+	color:#333;
+}
+.td2{
+	font-size:18px;
+	font-family:"����";
+	color:#CC9;
+	}
+.td3{
+	font-size: 14px;
+	font-family: "��Բ";
+	color: #FFC;
+	text-align: left;
+	}
+a:link {
+	color: #FFFFCC;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFFFCC;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}	
+
+div
+{
+    margin: 10px 0px;
+    border: solid 1px #ccc;
+    width: 280px;
+}
+ul
+{
+    list-style-type: none;
+    padding: 5px;
+    margin: 0px;
+}
+li
+{
+    margin: 3px;
+}
+h4
+{
+    background-color: #eee;
+    padding: 5px;
+    margin: 0px;
+}
+
